@@ -3,14 +3,19 @@ html
   head
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     title
-      = content_for?(:title) ? yield(:title) : 'Coworking'
-    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Coworking'}"
+      = content_for?(:title) ? yield(:title) : 'Saigon spaces: shared workspace and coworking community'
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Coworking saigon, coworking spaces, inexpensive office space'}"
+    meta name="keywords" content="saigon coworking, coworking space, shared office, coworking commmunity hcmc, saigon coworking community"
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => true
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
+    link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'
   body
     header
       == render 'layouts/navigation'
-    main[role="main"]
+    /main[role="main"]
+    .container
       == render 'layouts/messages'
       == yield
+    footer.bs-docs-footer
+      == render 'layouts/footer'

@@ -15,6 +15,9 @@ gem 'pg'
 gem 'sendgrid'
 gem 'simple_form'
 gem 'slim-rails'
+gem 'font-awesome-sass', '~> 4.2.0'
+gem 'activeadmin', github: 'activeadmin'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

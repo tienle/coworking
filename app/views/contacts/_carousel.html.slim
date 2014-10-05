@@ -1,0 +1,27 @@
+#carousel-example-generic.carousel.slide data-ride="carousel"
+  ol.carousel-indicators
+    li.active data-target="#carousel-example-generic" data-slide-to="0"/
+    li data-target="#carousel-example-generic" data-slide-to="1"/
+    li data-target="#carousel-example-generic" data-slide-to="2"/
+
+  .carousel-inner
+    .item.active
+      img src=image_path('saigon-spaces-coworking-1.jpg') alt="shared workspace and coworking community"
+      .carousel-caption
+        h3 Saigon Spaces
+        p Shared workspace and coworking community
+    .item
+      img src=image_path('saigon-spaces-coworking-2.jpg') alt="high speed internet"
+      .carousel-caption
+        h3 A cool, hip place to work
+        p with high speed internet/network access
+    .item
+      img src=image_path('coworking-space-6.jpg') alt=""
+      .carousel-caption
+        h3 A community of amazing, inspiring, friendly people
+        p who are fellow (r)evolutionaries in how work gets done, services gets delivered, products get built, and awesome stuff happens
+
+  a.left.carousel-control href="#carousel-example-generic" role="button" data-slide="prev"
+    span.glyphicon.glyphicon-chevron-left/
+  a.right.carousel-control href="#carousel-example-generic" role="button" data-slide="next"
+    span.glyphicon.glyphicon-chevron-right/
